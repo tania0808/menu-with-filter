@@ -5,10 +5,12 @@ const Item = ({ title, price, img, desc}) => {
         <article>
             <img src={img} alt="item" />
             <div className="infos">
-                <h4>{title}</h4>
-                <p>$ {price}</p>
+                <div className="header">
+                    <h4>{title}</h4>
+                    <p>$ {price}</p>
+                </div>
+                <p className='description'>{desc}</p>
             </div>
-            <p>{desc}</p>
         </article>
     );
 }
