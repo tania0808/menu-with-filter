@@ -1,7 +1,16 @@
 import React from 'react';
+import Item from './Item';
 
-const Menu = () => {
-  return <h2>menu component</h2>;
+const Menu = ({items}) => {
+  return (
+    <section>
+    {
+      items.map((item) => {
+        return <Item {...item} key={item.id}/>
+      })
+    }
+    </section>
+  )
 };
 
 export default Menu;

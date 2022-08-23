@@ -73,52 +73,96 @@ ul {
 a {
   text-decoration: none;
 }
-h1,
-h2,
-h3,
-h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
-  line-height: 1.25;
-  margin-bottom: 0.75rem;
+/*  global classes */
+main {
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
+
 h1 {
-  font-size: 3rem;
-}
-h2 {
+  margin-top: 4rem;
   font-size: 2rem;
 }
-h3 {
-  font-size: 1.25rem;
+
+header {
 }
-h4 {
-  font-size: 0.875rem;
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: var(--clr-gold);
+  margin: 0.6rem auto;
 }
-p {
-  margin-bottom: 1.25rem;
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.filter-btn {
+  text-transform: capitalize;
+  background: transparent;
+  border: transparent;
+  font-size: 18px;
+  color: var(--clr-gold);
+  padding: 7px 12px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in;
+}
+
+.filter-btn:hover {
+  color: white;
+  background-color: var(--clr-gold);
+  cursor: pointer;
+}
+
+article {
+  width: 400px;
+  margin-bottom: 2rem;
+}
+
+article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid var(--clr-gold);
+  border-radius: 5px;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+  border-bottom: 0.5px dashed var(--clr-grey-4);
+  margin-bottom: 0.7rem;
+}
+
+.infos h4 {
+  text-transform: capitalize;
+}
+
+.infos p {
+  color: var(--clr-gold);
+  font-weight: 700;
+}
+
+article p {
   color: var(--clr-grey-5);
 }
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
+
+@media screen and (min-width:968px ) {
+  
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
-/*  global classes */
