@@ -1,1 +1,1 @@
-# react-projects-5-menu
+### Simple menu with filter by categories functionality
